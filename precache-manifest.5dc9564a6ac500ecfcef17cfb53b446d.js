@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5f51052e6491bac9343312fac4db52ca",
+    "revision": "79426f5c29cda93dc66cd47ea96159f3",
     "url": "/towerIQ_test/index.html"
   },
   {
-    "revision": "7c0ed9620930e2feb24f",
-    "url": "/towerIQ_test/static/css/main.2d2e3ada.chunk.css"
+    "revision": "67cd6ca22b3dabcef599",
+    "url": "/towerIQ_test/static/css/main.2cc26cb4.chunk.css"
   },
   {
     "revision": "72abaf1e999a055f4993",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/towerIQ_test/static/js/2.0338dcda.chunk.js.LICENSE"
   },
   {
-    "revision": "7c0ed9620930e2feb24f",
+    "revision": "67cd6ca22b3dabcef599",
     "url": "/towerIQ_test/static/js/main.b10bff59.chunk.js"
   },
   {
