@@ -1,45 +1,48 @@
 import React from 'react';
+import Cards from './Cards'
+import Pagination from './Pagination'
 import { connect } from 'react-redux';
-import { getUsers } from './App'
-import { setUsers } from './store'
+import { uploadUsers } from './App'
+import { setUsers, setActivePage, getUsers } from './store'
 
 const UserList = ({ users, loadUsers }) => {
 
   const handleClick = () => {
-    const loadedUsers = getUsers()
+    const loadedUsers = uploadUsers()
     loadUsers(loadedUsers)
   }
-console.log('users11',users.users)
+
   return (
     <div>
       {users.length === 0
         && (
           <button
             type="button"
+            className='load-button'
             onClick={handleClick}
           >
-            Load
+            Click to load Users
           </button>
         )}
       {users.length !== 0
-        && users.map(user => (
-          <div className="card">
-            <p>{user.name}</p>
-            <p>{user.surname}</p>
-            <p>{user.desc}</p>
-          </div>
-        ))
+        &&
+        <div>
+          <h1 className='header'>users cards</h1>
+          <Cards />
+          <Pagination />
+        </div>
       }
     </div>
   )
 }
 
 const getExtraData = state => ({
-  users: state.users
+  users: getUsers(state)
 })
 
 const getExtraMethods = dispatch => ({
-  loadUsers: value => dispatch(setUsers(value))
+  loadUsers: value => dispatch(setUsers(value)),
+  changeActivePage: value => dispatch(setActivePage(value)),
 })
 
 export default connect(
