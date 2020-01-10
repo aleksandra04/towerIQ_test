@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/towerIQ_test/precache-manifest.85a9ccc85e9be6f09c3e4c7c914d0840.js"
+  "/towerIQ_test/precache-manifest.8b963c90e015667e8d1abfa9ad943427.js"
 );
 
 self.addEventListener('message', (event) => {
